@@ -10,7 +10,7 @@
 
 <form action="index.php" method="post">
 nome :<input type="text" name="n" ><br>
-telefone : <input type="text" name="t" ><br>
+mensagme : <input type="text" name="t" ><br>
 email : <input type="text" name="e" ><br>
 <input type="submit" value="Enviar"><br>
 </form>
