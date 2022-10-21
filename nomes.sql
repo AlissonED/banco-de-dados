@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Out-2022 às 16:50
+-- Tempo de geração: 21-Out-2022 às 16:44
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `nomes` (
   `id` int(11) NOT NULL,
   `nome` varchar(100) DEFAULT NULL,
-  `telefone` varchar(16) DEFAULT NULL,
+  `mensagem` varchar(16) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -38,7 +38,7 @@ CREATE TABLE `nomes` (
 -- Extraindo dados da tabela `nomes`
 --
 
-INSERT INTO `nomes` (`id`, `nome`, `telefone`, `email`) VALUES
+INSERT INTO `nomes` (`id`, `nome`, `mensagem`, `email`) VALUES
 (1, 'Fulano rodrigo', '40028922', 'fgsdgsdfsadfa'),
 (2, 'a', '123456', 'a@gmail'),
 (3, 'b', '123456', 'b@gmail'),
@@ -57,7 +57,13 @@ INSERT INTO `nomes` (`id`, `nome`, `telefone`, `email`) VALUES
 (16, NULL, NULL, NULL),
 (17, NULL, NULL, NULL),
 (18, 'dfs', 'dsfs', 'dfsfs'),
-(19, 'yuiiy', 'yuiytui', 'fgdh');
+(19, 'yuiiy', 'yuiytui', 'fgdh'),
+(20, '', '', ''),
+(21, 'dfs', 'sfsf', 'dsfs'),
+(22, 'dfs', 'sfsf', 'dsfs'),
+(23, 'gfhfg', 'ghf', 'fghf'),
+(24, '1', '2', '3'),
+(25, '1', '2', '3');
 
 --
 -- Índices para tabelas despejadas
@@ -77,7 +83,7 @@ ALTER TABLE `nomes`
 -- AUTO_INCREMENT de tabela `nomes`
 --
 ALTER TABLE `nomes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

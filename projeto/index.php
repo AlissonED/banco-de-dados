@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" conten="Alisson"
     <title>Document</title>
 </head>
 <body>
 
 <form action="index.php" method="post">
 nome :<input type="text" name="n" ><br>
-mensagme : <input type="text" name="t" ><br>
+mensagem : <input type="text" name="t" ><br>
 email : <input type="text" name="e" ><br>
 <input type="submit" value="Enviar"><br>
 </form>
@@ -36,7 +35,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO nomes (nome, telefone, email)
+$sql = "INSERT INTO nomes (nome, mensagem, email)
 VALUES ('$nome', '$telefone', '$email')";
 
 if ($conn->query($sql) === TRUE) {
